@@ -46,16 +46,12 @@ let a=undefined;
 let b=undefined;
 let score=0;
 showQuiz();
-timer();
-setInterval(timer,1000);
 
 function timer(){
   console.log(time);
     t.innerHTML=time;
       time= time-1;
- if (time<0) {
-   (i<quest.length) ? showQuiz() : reload();
- }
+
 
 }
 
@@ -63,7 +59,6 @@ function timer(){
 
 
  function showQuiz(){
-   time=10;
 
      ques.innerText=quest[i].question;
      atext.innerText=quest[i].a;
@@ -79,7 +74,6 @@ function onClick(){
 
         j++;
         if(a){
-          time=10;
             unCheck();
         (i<quest.length) ? showQuiz() : reload();
         }

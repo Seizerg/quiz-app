@@ -22,13 +22,23 @@ body{
  background: white;
 position: relative;
 box-shadow: 10px 10px 40px 5px grey;
+position: relative;
+}
+.quiz-box .timer{
+  position: absolute;
+  top: 2rem;
+  left: 15rem;
+}
+#time{
+    font-size: 20px;
+    font-weight: 600;
 }
 
  ul{
     display: flex;
     flex-direction: column;
 
-    
+
 }
 .options .for {
     margin-top: 10px;
